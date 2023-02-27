@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import Headline from "@/components/Headline";
 import Links from "@/components/Links";
@@ -16,11 +17,11 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <Headline
-            title="index"
-            page="Indexです"
-            onClick={() => alert("クリックしたよ")}
+            title="about"
+            page="aboutです"
+            onClick={() => alert("クリック")}
           >
-            <code className={styles.code}>pages/index.js</code>
+            <code className={styles.code}>pages/about.js</code>
           </Headline>
           <div>
             <a
